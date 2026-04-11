@@ -13,6 +13,7 @@ Você pode fazer um fork deste modelo agora mesmo, modificar as configurações 
 
 ## A data-driven personal website
 ======
+
 Assim como muitos outros modelos do GitHub Pages baseados em Jekyll, o Academic Pages faz com que você separe o conteúdo do site de sua forma. O conteúdo e os metadados do seu site ficam em arquivos Markdown estruturados, enquanto vários outros arquivos compõem o tema, definindo como transformar esse conteúdo e metadados em páginas HTML. Você mantém esses diversos arquivos Markdown (.md), YAML (.yml), HTML e CSS em um repositório público no GitHub. Cada vez que você faz um commit e envia uma atualização para o repositório, o serviço [GitHub pages](https://pages.github.com/) cria páginas HTML estáticas com base nesses arquivos, que são hospedadas gratuitamente nos servidores do GitHub.
 
 Muitos dos recursos de sistemas de gerenciamento de conteúdo dinâmico (como o Wordpress) podem ser alcançados dessa forma, utilizando uma fração dos recursos computacionais e com muito menos vulnerabilidade a ataques de hackers e DDoS. Você também pode modificar o tema à vontade sem precisar alterar o conteúdo do seu site. Se você chegar a um ponto em que tenha quebrado algo no Jekyll/HTML/CSS além de conserto, seus arquivos Markdown que descrevem suas palestras, publicações etc. estarão seguros. Você pode reverter as alterações ou até mesmo excluir o repositório e começar do zero — apenas certifique-se de salvar os arquivos Markdown! Você também pode escrever scripts que processem os dados estruturados do site, como [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), que analisa os metadados em páginas sobre palestras para exibir [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
@@ -24,6 +25,7 @@ Para usuários que precisam de funcionalidades mais avançadas, o modelo também
 
 ## Getting started
 ======
+
 1. Crie uma conta no GitHub, caso ainda não tenha uma, e confirme seu e-mail (obrigatório!)
 1. Faça um fork deste modelo clicando no botão "Use this template" no canto superior direito: [this template](https://github.com/academicpages/academicpages.github.io)
 1. Vá até as configurações do repositório (última aba à direita na barra que começa com "Code", abaixo de "Unwatch"). Renomeie o repositório para "[seu nome de usuário do GitHub].github.io", que também será a URL do seu site.
