@@ -11,42 +11,42 @@ redirect_from:
 
 ## Locations of key files/directories
 
-* Basic config options: _config.yml
-* Top navigation bar config: _data/navigation.yml
-* Single pages: _pages/
-* Collections of pages are .md or .html files in:
-  * _publications/
-  * _portfolio/
-  * _posts/
-  * _teaching/
-  * _talks/
-* Footer: _includes/footer.html
-* Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
+* Opções básicas de configuração: _config.yml  
+* Configuração da barra de navegação superior: _data/navigation.yml  
+* Páginas individuais: _pages/  
+* Coleções de páginas são arquivos .md ou .html em:
+  * _publications/  
+  * _portfolio/  
+  * _posts/  
+  * _teaching/  
+  * _talks/  
+* Rodapé: _includes/footer.html  
+* Arquivos estáticos (como PDFs): /files/  
+* Imagem de perfil (pode ser definida em _config.yml): images/profile.png  
 
 ## Tips and hints
 
-* Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version GitHub built with Jekyll. 
-  * Green check: successful build
-  * Orange circle: building
-  * Red X: error
-  * No icon: not built
+* Nomeie um arquivo como ".md" para que ele seja renderizado em Markdown, ou como ".html" para que seja renderizado em HTML.  
+* Vá até a [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (no seu repositório) para encontrar a última versão que o GitHub compilou com Jekyll.  
+  * Marca de verificação verde: compilação bem-sucedida  
+  * Círculo laranja: em processo de compilação  
+  * X vermelho: erro  
+  * Sem ícone: não foi compilado  
 
-* Academic Pages uses [Jekyll Kramdown](https://jekyllrb.com/docs/configuration/markdown/), GitHub Flavored Markdown (GFM) parser, which is similar to the version of Markdown used on GitHub, but may have some minor differences. 
-  * Some of emoji supported on GitHub should be supposed via the [Jemoji](https://github.com/jekyll/jemoji) plugin :computer:.
-  * The best list of the supported emoji can be found in the [Emojis for Jekyll via Jemoji](https://www.fabriziomusacchio.com/blog/2021-08-16-emojis_for_Jekyll/#computer) blog post.
+* O Academic Pages utiliza [Jekyll Kramdown](https://jekyllrb.com/docs/configuration/markdown/), um parser de GitHub Flavored Markdown (GFM), que é semelhante à versão de Markdown usada no GitHub, mas pode ter algumas pequenas diferenças.  
+  * Alguns emojis suportados no GitHub também são suportados por meio do plugin [Jemoji](https://github.com/jekyll/jemoji) :computer:.  
+  * A melhor lista de emojis suportados pode ser encontrada no post [Emojis for Jekyll via Jemoji](https://www.fabriziomusacchio.com/blog/2021-08-16-emojis_for_Jekyll/#computer).
 
-* While GitHub Pages prevents server side code from running, client-side scripts are supported.
-  * This means that Google Analytics is supported, and [the wiki](https://github.com/academicpages/academicpages.github.io/wiki/Adding-Google-Analytics) should contain the most up-to-date information on getting it working.
+* Embora o GitHub Pages impeça a execução de código no lado do servidor, scripts do lado do cliente são suportados.  
+  * Isso significa que o Google Analytics é compatível, e [the wiki](https://github.com/academicpages/academicpages.github.io/wiki/Adding-Google-Analytics) deve conter as informações mais atualizadas sobre como configurá-lo.
+    
+* Seu CV pode ser escrito usando Markdown ([preview](https://academicpages.github.io/cv/)) ou gerado via JSON ([preview](https://academicpages.github.io/cv-json/)), e os layouts são ligeiramente diferentes. Você pode atualizar o caminho para o que estiver sendo usado em `_data/navigation.yml`, sendo que o CV formatado em JSON fica oculto por padrão.
 
-* Your CV can be written using either Markdown ([preview](https://academicpages.github.io/cv/)) or generated via JSON ([preview](https://academicpages.github.io/cv-json/)) and the layouts are slightly different. You can update the path to the one being used in `_data/navigation.yml` with the JSON formatted CV being hidden by default.
-
- * The [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/) is a useful guide for those that want to add functionality to the template or to become contributors to the [template on GitHub](https://github.com/academicpages/academicpages.github.io).
-
+* O [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/) é um guia útil para quem deseja adicionar funcionalidades ao modelo ou se tornar um colaborador do [template on GitHub](https://github.com/academicpages/academicpages.github.io).
+  
 ## MathJax 
 
-Support for MathJax (version 3.* via [jsDelivr](https://www.jsdelivr.com/), [documentation](https://docs.mathjax.org/en/latest/)) is included in the template:
+O suporte ao MathJax (versão 3.* via [jsDelivr](https://www.jsdelivr.com/), [documentation](https://docs.mathjax.org/en/latest/)) está incluído no modelo:
 
 $$
 \displaylines{
@@ -57,12 +57,13 @@ $$
 }
 $$
 
-The default delimiters of `$$...$$` and `\\[...\\]` are supported for displayed mathematics, while `\\(...\\)` should be used for in-line mathematics (ex., \\(a^2 + b^2 = c^2\\))
+Os delimitadores padrão `$$...$$` e `\\[...\\]` são suportados para matemática em bloco, enquanto `\\(...\\)` deve ser usado para matemática em linha (por exemplo, \\(a^2 + b^2 = c^2\\)).
 
-**Note** that since Academic Pages uses Markdown which cases some interference with MathJax and LaTeX for escaping characters and new lines, although [some workarounds exist](https://math.codidact.com/posts/278763/278772#answer-278772). In some cases, such as when you are including MathJax in a `citation` field for publications, it may be necessary to use `\(...\)` for inline delineation.
+**Nota**: como o Academic Pages utiliza Markdown, isso pode causar alguma interferência com o MathJax e o LaTeX no que diz respeito a caracteres de escape e quebras de linha, embora [algumas soluções alternativas existam](https://math.codidact.com/posts/278763/278772#answer-278772). Em alguns casos, como ao incluir MathJax em um campo `citation` para publicações, pode ser necessário usar `\(...\)` para delimitação inline.
 
 ## Mermaid diagrams
-Academic Pages includes support for [Mermaid diagrams](https://mermaid.js.org/) (version 11.* via [jsDelivr](https://www.jsdelivr.com/)) and in addition to their [tutorials](https://mermaid.js.org/ecosystem/tutorials.html) and [GitHub documentation](https://github.com/mermaid-js/mermaid) the basic syntax is as follows:
+
+O Academic Pages inclui suporte para [Mermaid diagrams](https://mermaid.js.org/) (versão 11.* via [jsDelivr](https://www.jsdelivr.com/)) e, além dos [tutorials](https://mermaid.js.org/ecosystem/tutorials.html) e da [GitHub documentation](https://github.com/mermaid-js/mermaid), a sintaxe básica é a seguinte:
 
 ```markdown
     ```mermaid
@@ -71,15 +72,14 @@ Academic Pages includes support for [Mermaid diagrams](https://mermaid.js.org/) 
     ```
 ```
 
-Which produces the following plot with the [default theme](https://mermaid.js.org/config/theming.html) applied:
+O que produz o seguinte gráfico com o [default theme](https://mermaid.js.org/config/theming.html) aplicado:
 
 ```mermaid
 graph LR
 A-->B
 ```
 
-While a more advanced plot with the `forest` theme applied looks like the following:
-
+Já um gráfico mais avançado com o tema `forest` aplicado se parece com o seguinte:
 ```mermaid
 ---
 config:
@@ -93,9 +93,10 @@ graph TD;
 ```
 
 ## Plotly
-Academic Pages includes support for Plotly diagrams via a hook in the Markdown code elements, although those that are comfortable with HTML and JavaScript can also access it [via those routes](https://plotly.com/javascript/getting-started/). Plotly is included via an `npm` [package](https://www.npmjs.com/package/plotly.js?activeTab=readme) and is distributed as part of the minimized JavaScript that is part of the template.
 
-In order to render a Plotly plot via Markdown the relevant plot data need to be added as follows:
+O Academic Pages inclui suporte para gráficos do Plotly por meio de um hook nos elementos de código Markdown, embora aqueles que tenham familiaridade com HTML e JavaScript também possam acessá-lo [via those routes](https://plotly.com/javascript/getting-started/). O Plotly é incluído via um [package](https://www.npmjs.com/package/plotly.js?activeTab=readme) do npm e é distribuído como parte do JavaScript minimizado que faz parte do modelo.
+
+Para renderizar um gráfico do Plotly via Markdown, os dados do gráfico precisam ser adicionados da seguinte forma:
 
 ```markdown
     ```plotly
@@ -116,10 +117,10 @@ In order to render a Plotly plot via Markdown the relevant plot data need to be 
     ```
 ```
 
-**Important!** Since the data is parsed as JSON *all* of the keys will need to be quoted for the plot to render. The use of a tool like [JSONLint](https://jsonlint.com/) to check syntax is highly recommended.
+**Importante!** Como os dados são interpretados como JSON, *todas* as chaves precisam estar entre aspas para que o gráfico seja renderizado corretamente. O uso de uma ferramenta como [JSONLint](https://jsonlint.com/) para verificar a sintaxe é altamente recomendado.
 {: .notice}
 
-Which produces the following:
+O que produz o seguinte:
 ```plotly
 {
   "data": [
@@ -137,7 +138,7 @@ Which produces the following:
 }
 ```
 
-Essentially what is taking place is that the [Plotly attributes](https://plotly.com/javascript/reference/index/) are being taken from the code block as JSON data, parsed, and passed to Plotly along with a theme that matches the current site theme (i.e., a light theme, or a dark theme). This allows all plots that can be described via the `data` attribute to rendered with some limitations for the theme of the plot.
+Essencialmente, o que acontece é que os [Plotly attributes](https://plotly.com/javascript/reference/index/) são extraídos do bloco de código como dados em JSON, interpretados e enviados ao Plotly juntamente com um tema que corresponde ao tema atual do site (ou seja, um tema claro ou escuro). Isso permite que todos os gráficos que podem ser descritos pelo atributo `data` sejam renderizados, com algumas limitações relacionadas ao tema do gráfico.
 
 ```plotly
 {
@@ -220,7 +221,7 @@ Essentially what is taking place is that the [Plotly attributes](https://plotly.
 
 ## Markdown guide
 
-Academic Pages uses [kramdown](https://kramdown.gettalong.org/index.html) for Markdown rendering, which has some differences from other Markdown implementations such as GitHub's. In addition to this guide, please see the [kramdown Syntax page](https://kramdown.gettalong.org/syntax.html) for full documentation.  
+O Academic Pages utiliza [kramdown](https://kramdown.gettalong.org/index.html) para renderização de Markdown, que possui algumas diferenças em relação a outras implementações de Markdown, como a do GitHub. Além deste guia, consulte também a [kramdown Syntax page](https://kramdown.gettalong.org/syntax.html) para a documentação completa.  
 
 ### Header three
 
@@ -261,19 +262,19 @@ ll5   | cell6   |
 
 ## Definition Lists
 
-Definition List Title
-:   Definition list division.
+Título da lista de definições  
+:   Divisão da lista de definições.
 
-Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
+Startup  
+:   Uma startup é uma empresa ou organização temporária projetada para buscar um modelo de negócio repetível e escalável.
 
-#dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
+#dowork  
+:   Termo criado por Rob Dyrdek e seu guarda-costas Christopher "Big Black" Boykins, "Do Work" funciona como um autoestímulo, motivando você e seus amigos.
 
-Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
+Do It Live  
+:   Vou deixar o Bill O'Reilly [explicar](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") este aqui.
 
-## Unordered Lists (Nested)
+## Listas não ordenadas (aninhadas)
 
   * List item one 
       * List item one 
@@ -305,25 +306,24 @@ Do It Live
 
 ## Buttons
 
-Make any link standout more when applying the `.btn` class.
+Faça com que qualquer link se destaque mais ao aplicar a classe `.btn`.
 
 ## Notices
 
-Basic notices or call-outs are supported using the following syntax:
-
+Avisos básicos ou destaques são suportados usando a seguinte sintaxe:
 ```markdown
 **Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
 {: .notice}
 ```
 
-which wil render as:
+o que será renderizado como:
 
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
+**Cuidado!** Você também pode adicionar avisos anexando `{: .notice}` à linha seguinte ao parágrafo.
 {: .notice}
 
 ### Footnotes
 
-Footnotes can be useful for clarifying points in the text, or citing information.[^1] Markdown support numeric footnotes, as well as text as long as the values are unique.[^note]
+Notas de rodapé podem ser úteis para esclarecer pontos no texto ou citar informações.[^1] O Markdown oferece suporte a notas de rodapé numéricas, bem como texto, desde que os valores sejam únicos.[^note]
 
 ```markdown
 This is the regular text.[^1] This is more regular text.[^note]
@@ -332,8 +332,8 @@ This is the regular text.[^1] This is more regular text.[^note]
 [^note]: This is another footnote.
 ```
 
-[^1]: Such as this footnote.
-[^note]: When using text for footnotes markers, no spaces are permitted in the name.
+[^1]: Como esta nota de rodapé.  
+[^note]: Ao usar texto como marcador de notas de rodapé, não são permitidos espaços no nome.
 
 ## HTML Tags
 
@@ -345,23 +345,23 @@ This is the regular text.[^1] This is more regular text.[^note]
 
 ### Anchor Tag (aka. Link)
 
-This is an example of a [link](https://github.com "GitHub").
+Este é um exemplo de um [link](https://github.com "GitHub").
 
 ### Abbreviation Tag
 
-The abbreviation CSS stands for "Cascading Style Sheets".
+A abreviação CSS significa "Cascading Style Sheets".
 
 *[CSS]: Cascading Style Sheets
 
 ### Cite Tag
 
-"Code is poetry." ---<cite>Automattic</cite>
+"Código é poesia." ---<cite>Automattic</cite>
 
 ### Code Tag
 
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
+Você aprenderá mais adiante nestes testes que `word-wrap: break-word;` será seu melhor amigo.
 
-You can also write larger blocks of code with syntax highlighting supported for some languages, such as Python:
+Você também pode escrever blocos maiores de código com destaque de sintaxe suportado para algumas linguagens, como Python:
 
 ```python
 print('Hello World!')
@@ -373,16 +373,16 @@ or R:
 print("Hello World!", quote = FALSE)
 ```
 
-### Details Tag (collapsible sections)
+### Details Tag (seções recolhíveis)
 
-The HTML `<details>` tag works well with Markdown and allows you to include collapsible sections, see [W3Schools](https://www.w3schools.com/tags/tag_details.asp) for more information on how to use the tag.
+A tag HTML `<details>` funciona bem com Markdown e permite incluir seções recolhíveis. Veja [W3Schools](https://www.w3schools.com/tags/tag_details.asp) para mais informações sobre como usar a tag.
 
 <details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
+  <summary>Recolhido por padrão</summary>
+  Esta seção estava recolhida por padrão!
 </details>
 
-The source code:
+O código-fonte:
 
 ```HTML
 <details>
@@ -391,29 +391,28 @@ The source code:
 </details>
 ```
 
-Or, you can leave a section open by default by including the `open` attribute in the tag:
+Ou você pode deixar uma seção aberta por padrão incluindo o atributo `open` na tag:
 
 <details open>
-  <summary>Open by default</summary>
-  This section is open by default thanks to open in the &lt;details open&gt; tag!
+  <summary>Aberto por padrão</summary>
+  Esta seção está aberta por padrão graças ao uso de `open` na tag &lt;details open&gt;!
 </details>
-
 
 ### Emphasize Tag
 
-The emphasize tag should _italicize_ text.
+A tag de ênfase deve deixar o texto em _itálico_.
 
 ### Insert Tag
 
-This tag should denote <ins>inserted</ins> text.
+Esta tag deve indicar texto <ins>inserido</ins>.
 
 ### Keyboard Tag
 
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
+Esta tag pouco conhecida simula <kbd>texto de teclado</kbd>, que geralmente é estilizado como a tag `<code>`.
 
 ### Preformatted Tag
 
-This tag styles large blocks of code.
+Esta tag estiliza grandes blocos de código.
 
 <pre>
 .post-title {
@@ -427,30 +426,29 @@ This tag styles large blocks of code.
 
 ### Quote Tag
 
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
+<q>Desenvolvedores, desenvolvedores, desenvolvedores&#8230;</q> &#8211;Steve Ballmer
 
 ### Strike Tag
 
-This tag will let you <strike>strikeout text</strike>.
+Esta tag permite que você <strike>risque o texto</strike>.
 
 ### Strong Tag
 
-This tag shows **bold text**.
+Esta tag exibe texto em **negrito**.
 
 ### Subscript Tag
 
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
+Aplicando estilo científico com H<sub>2</sub>O, o que deve deixar o "2" em posição inferior.
 
 ### Superscript Tag
 
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
+Continuando com ciência e a equação de Isaac Newton E = MC<sup>2</sup>, o que deve elevar o 2.
 
 ### Variable Tag
 
-This allows you to denote <var>variables</var>.
+Isso permite indicar <var>variáveis</var>.
 
 ***
 **Footnotes**
 
-The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
-
+As notas de rodapé da página serão exibidas após esta linha; retorne à seção <a href="#footnotes">Markdown Footnotes</a>.
