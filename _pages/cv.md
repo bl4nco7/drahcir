@@ -9,13 +9,13 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+Educação
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, Universidad Centroocidental Lisandro Alvarado, 2019
+* Doutorado em Matemática,  Universidade Federal da Bahia, UFBA, Brasil, (em andamento).
+* Mestre em Matemática, Universidade Federal da Bahia, UFBA, Brasil, 2023.
+* Bacharelado em Ciências Matemáticas, Universidad Centroccidental Lisandro Alvarado (UCLA), Barquisimeto, Lara, Venezuela, 2019.
 
-Work experience
+Experiência profissional
 ======
 * Spring 2024: Academic Pages Collaborator
   * GitHub University
@@ -41,13 +41,13 @@ Skills
   * Sub-skill 2.3
 * Skill 3
 
-Publications
+Publicações
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+Palestras
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
@@ -59,6 +59,6 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Serviço e direção
 ======
 * Currently signed in to 43 different slack teams
