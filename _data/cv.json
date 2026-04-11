@@ -1,15 +1,15 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
+    "name": "Drahcir A. Blanco G.",
+    "email": "blancodrahcir@gmail.com",
+    "phone": "(16) 988 27 1756",
+    "website": "http://lattes.cnpq.br/9361255276021902",
     "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "Salvadoor de Bahia, Brasil",
+      "countryCode": "BR",
       "region": ""
     },
     "profiles": [
@@ -25,43 +25,43 @@
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "bl4nco7",
+        "url": "https://bl4nco7.github.io/drahcir//"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "Universidade Federal da Bahia (UFBA)",
+      "area": "Doutorado em Matemática",
       "studyType": "",
       "startDate": "",
-      "endDate": "2018",
+      "endDate": "em andamento",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "Universidade Federal da Bahia (UFBA)",
+      "area": "Mestre em Matemática",
       "studyType": "",
       "startDate": "",
-      "endDate": "2014",
+      "endDate": "2023",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
+      "institution": "Universidad Centroccidental Lisandro Alvarado (Venezuela)",
+      "area": "Bacharelado em Ciências Matemáticas",
       "studyType": "",
       "startDate": "",
-      "endDate": "2012",
+      "endDate": "2019",
       "gpa": null,
       "courses": []
     }
   ],
   "skills": [],
-  "languages": [],
+  "languages": Espanhol (Nativo), Portugues.
   "interests": [],
   "references": [],
   "publications": [
