@@ -7,7 +7,7 @@
 # processo do servidor.
 
 # Basic Site Settings
-locale                   : "pt-BR"
+locale                   : "en-US"
 site_theme               : "dirt" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Drahcir A. Blanco G." # Acá tambien puedo colocar mi título
 title_separator          : "-"
