@@ -7,15 +7,15 @@
 # processo do servidor.
 
 # Basic Site Settings
-locale                   : "en-US"
-site_theme               : "dirt" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Drahcir A. Blanco G." # Acá tambien puedo colocar mi título
+locale                   : "pt-BR"
+site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+title                    : "D. A. B. G." # Acá tambien puedo colocar mi título
 title_separator          : "-"
 name                     : &name "Drahcir Alexander Blanco Garcia"
 description              : &description "Portfólio acadêmico de Drahcir A. B. Garcia"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : "https://bl4nco7.github.io/drahcir" # https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : https://bl4nco7.github.io # https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/drahcir" # the subpath of your site, e.g. "/blog"
 repository               : # bl4nco7/drahcir # "bl4nco7.github.io/drahcir/" # "academicpages/academicpages.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
