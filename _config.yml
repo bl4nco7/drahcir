@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "pt-BR"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "D. A. B. G." # Acá tambien puedo colocar mi título
+title                    : "Drahcir A. Blanco G." # Acá tambien puedo colocar mi título
 title_separator          : "-"
 name                     : &name "Drahcir Alexander Blanco Garcia"
 description              : &description "Portfólio acadêmico de Drahcir A. B. Garcia"   # Update this with a general description of your site, this is the default if not overridden by a page
