@@ -1,63 +1,64 @@
 # Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+**Academic Pages é um template do GitHub Pages para sites pessoais e profissionais orientados a portfólio.**
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+![Exemplo do template Academic Pages](images/themes/homepage-light.png "Exemplo do template Academic Pages")
 
-# Getting Started
+# Primeiros Passos
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Edit site-wide configuration in `_config.yml` and double check that the `url` is the one that you just selected in the previous step and that `repository` reflects the correct path for your repository.
-1. Add your site content, upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+1. Crie uma conta no GitHub, caso ainda não tenha, e confirme seu e-mail (obrigatório!)
+1. Clique no botão "Use this template" no canto superior direito.
+1. Na página "New repository", insira o nome do seu repositório público como "[seu usuário do GitHub].github.io", que também será a URL do seu site.
+1. Edite a configuração geral do site em `_config.yml` e verifique se o `url` é o mesmo que você definiu no passo anterior e se `repository` reflete o caminho correto do seu repositório.
+1. Adicione o conteúdo do seu site e envie arquivos (como PDFs, arquivos .zip, etc.) para o diretório `files/`. Eles estarão disponíveis em https://[seu usuário do GitHub].github.io/files/exemplo.pdf.
+1. Verifique o status acessando as configurações do repositório, na seção "GitHub Pages".
+1. (Opcional) Use os notebooks Jupyter ou scripts Python na pasta `markdown_generator` para gerar arquivos markdown de publicações e apresentações a partir de um arquivo TSV.
 
-See more info at https://academicpages.github.io/
+Veja mais informações em https://academicpages.github.io/
 
-### Additional Tutorials
+### Tutoriais Adicionais
 
-Additional tutorials for working with the Academic Pages template can be found at the following sites:
+Tutoriais adicionais para trabalhar com o template Academic Pages podem ser encontrados nos seguintes sites:
 - https://jayrobwilliams.com/posts/2020/06/academic-website/
 
-## Running locally
+## Executando localmente
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+Quando você estiver trabalhando inicialmente no seu site, é muito útil poder visualizar as alterações localmente antes de enviá-las para o GitHub. Para trabalhar localmente, você precisará:
 
-1. Clone the repository and made updates as detailed above.
+1. Clonar o repositório e fazer as atualizações conforme descrito acima.
 
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
+### Usando uma IDE diferente
+1. Certifique-se de que você tem ruby-dev, bundler e nodejs instalados
     
-    On most Linux distributions and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
+    Na maioria das distribuições Linux e no [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) o comando é:
     ```bash
     sudo apt install ruby-dev ruby-bundler nodejs
     ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
+    Se você vir o erro `Unable to locate package ruby-bundler`, `Unable to locate package nodejs`, execute o seguinte:
     ```bash
     sudo apt update && sudo apt upgrade -y
     ```
-    then try running `sudo apt install ruby-dev ruby-bundler nodejs` again.
+    depois tente executar `sudo apt install ruby-dev ruby-bundler nodejs` novamente.
 
-    On MacOS the commands are:
+    No MacOS os comandos são:
     ```bash
     brew install ruby
     brew install node
     gem install bundler
     ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
 
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
+1. Execute `bundle install` para instalar as dependências Ruby. Se ocorrerem erros, exclua o arquivo `Gemfile.lock` e tente novamente.
+
+    Se você vir erro de permissão como `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` ou `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
+    Instale as Gems localmente (recomendado):
     ```bash
     bundle config set --local path 'vendor/bundle'
     ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
+    depois tente executar `bundle install` novamente. Se funcionar, você deverá ver uma pasta chamada `vendor` e `.bundle`.
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stopping and restarting Jekyll.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
+1. Execute `jekyll serve -l -H localhost` para gerar o HTML e servi-lo em `localhost:4000`. O servidor local irá reconstruir automaticamente e atualizar as páginas quando houver mudanças em arquivos Markdown (*.md) e HTML. Já alterações no template principal e na configuração (como `_config.yml`) exigem parar e reiniciar o Jekyll.
+    Você também pode tentar `bundle exec jekyll serve -l -H localhost` para garantir que o Jekyll use as dependências específicas da sua máquina local.
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+Se você estiver usando Linux, pode ser necessário instalar algumas dependências adicionais antes de conseguir executar localmente: `sudo apt install build-essential gcc make`
 
 ## Using Docker
 
