@@ -1,5 +1,16 @@
 ---
 permalink: /
+title: "Sobre mim"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+Graduado em Ciências Matemáticas com uma sólida formação em álgebra, cálculo diferencial, integral e vetorial, além de geometria básica e diferencial. Possuo conhecimento avançado em programação com R e Python, e experiência em análise de dados e modelagem matemática. Com forte capacidade para resolver problemas complexos, apliquei minhas habilidades em otimização matemática e métodos numéricos em diversas áreas, desde pesquisas acadêmicas até projetos de análise de dados na indústria. Meu objetivo é continuar desenvolvendo minhas habilidades e aplicar meu conhecimento para resolver desafios interdisciplinares em matemática e ciência de dados. 
+
+<!--
+---
+permalink: /
 title: "O Academic Pages é um modelo do GitHub Pages pronto para ser copiado, destinado a sites pessoais de caráter acadêmico"
 author_profile: true
 redirect_from: 
@@ -56,3 +67,5 @@ Exemplo: editando um arquivo Markdown para uma palestra
 Para mais informações
 ------
 Mais informações sobre como configurar o Academic Pages podem ser encontradas em [the guide](https://academicpages.github.io/markdown/), na [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), e você também pode [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). Os [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (do qual este tema foi derivado) também podem ser úteis.
+
+-->
